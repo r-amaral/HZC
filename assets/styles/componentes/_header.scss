@@ -8,12 +8,10 @@
     height: 56px;
     padding: 8px 16px;
 
-
     .header__menu {
         height: 24px;
         width: 24px;
         grid-column: 1;
-        cursor: pointer;
     }
 
     .header__menu i::before {

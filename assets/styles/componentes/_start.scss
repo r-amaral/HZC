@@ -1,0 +1,102 @@
+@import '../abstract/_main.scss';
+
+.start {
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .card--featured {
+        border-radius: 16px;
+        overflow: hidden;
+
+        .img__featured--mobile {
+            width: 100%;
+            height: 306px;
+        }
+
+        .featured__content {
+            background: $card-color;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 44px;
+            row-gap: 8px;
+            padding-top: 8px;
+            padding-bottom: 16px;
+
+            .description__card {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                grid-column: span 2;
+            }
+
+            .main__title__card {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                grid-column: span 2;
+            }
+
+            .autor__card {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: $alternative-color;
+                grid-column: span 2;
+            }
+
+            .time__card,
+            .views__card {
+                color: $alternative-color;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            .time__card {
+                grid-column: 1;
+            }
+
+            .time__card::before {
+                content: '\e90c';
+                font-size: 13px;
+                margin-right: 5px;
+            }
+
+            .views__card {
+                grid-column: 2;
+            }
+
+            .views__card::before {
+                content: '\e90f';
+                font-size: 13px;
+                margin-right: 5px;
+            }
+
+            .button__card--featured {
+                width: 100%;
+                height: 40px;
+                background: #0480DC;
+                border-radius: 8px;
+                padding: 8px;
+                gap: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-column: span 2;
+                cursor: pointer;
+            }
+
+            .button__card--featured i::before {
+                content: '\e90b';
+                font-size: 24px;
+            }
+        }
+    }
+}
