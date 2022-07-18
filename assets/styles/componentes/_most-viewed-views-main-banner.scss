@@ -1,17 +1,14 @@
 @import '../abstract/_main.scss';
 
-.most__viewed__videos,
-.latest__shirts {
+.topic {
 
-    .most__viewed--card,
-    .latest__shirts--card {
+    .card {
 
         .img__most__viewed__main__banner--mobile {
             height: 336px;
         }
 
-        .most__viewed__content,
-        .latest__shirts__content {
+        .card__content {
 
             .main__title__card--main--banner {
                 height: 24px;

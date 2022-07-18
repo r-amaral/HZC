@@ -50,14 +50,14 @@ body {
 .header__main .mobile__logo {
   width: 40px;
   height: 40px;
-  grid-columns: 2;
+  grid-column: 2;
   justify-self: center;
 }
 .header__main .header__notification {
   height: 24px;
   width: 24px;
   justify-self: flex-end;
-  grid-columns: 3;
+  grid-column: 3;
 }
 .header__main .header__notification i::before {
   content: "\e906";
@@ -162,93 +162,31 @@ body {
   padding-right: 4.4%;
 }
 
-.most__viewed__videos,
-.latest__shirts,
-.start {
+.topic {
   margin-bottom: 24px;
   margin-top: 16px;
   display: grid;
   gap: 20px;
 }
-.most__viewed__videos h2,
-.latest__shirts h2,
-.start h2 {
+.topic h2 {
   font-weight: 700;
   font-size: 26px;
   line-height: 32px;
 }
-.most__viewed__videos .card--featured,
-.most__viewed__videos .most__viewed--card,
-.most__viewed__videos .latest__shirts--card,
-.latest__shirts .card--featured,
-.latest__shirts .most__viewed--card,
-.latest__shirts .latest__shirts--card,
-.start .card--featured,
-.start .most__viewed--card,
-.start .latest__shirts--card {
+.topic .card {
   border-radius: 16px;
   overflow: hidden;
 }
-.most__viewed__videos .card--featured .img__featured--mobile,
-.most__viewed__videos .most__viewed--card .img__featured--mobile,
-.most__viewed__videos .latest__shirts--card .img__featured--mobile,
-.latest__shirts .card--featured .img__featured--mobile,
-.latest__shirts .most__viewed--card .img__featured--mobile,
-.latest__shirts .latest__shirts--card .img__featured--mobile,
-.start .card--featured .img__featured--mobile,
-.start .most__viewed--card .img__featured--mobile,
-.start .latest__shirts--card .img__featured--mobile {
+.topic .card .img__featured--mobile {
   width: 100%;
   height: 306px;
 }
-.most__viewed__videos .card--featured .img__most__viewed--mobile,
-.most__viewed__videos .card--featured .img__latest__shirts--mobile,
-.most__viewed__videos .most__viewed--card .img__most__viewed--mobile,
-.most__viewed__videos .most__viewed--card .img__latest__shirts--mobile,
-.most__viewed__videos .latest__shirts--card .img__most__viewed--mobile,
-.most__viewed__videos .latest__shirts--card .img__latest__shirts--mobile,
-.latest__shirts .card--featured .img__most__viewed--mobile,
-.latest__shirts .card--featured .img__latest__shirts--mobile,
-.latest__shirts .most__viewed--card .img__most__viewed--mobile,
-.latest__shirts .most__viewed--card .img__latest__shirts--mobile,
-.latest__shirts .latest__shirts--card .img__most__viewed--mobile,
-.latest__shirts .latest__shirts--card .img__latest__shirts--mobile,
-.start .card--featured .img__most__viewed--mobile,
-.start .card--featured .img__latest__shirts--mobile,
-.start .most__viewed--card .img__most__viewed--mobile,
-.start .most__viewed--card .img__latest__shirts--mobile,
-.start .latest__shirts--card .img__most__viewed--mobile,
-.start .latest__shirts--card .img__latest__shirts--mobile {
+.topic .card .img__most__viewed--mobile,
+.topic .card .img__latest__shirts--mobile {
   width: 100%;
   height: 160px;
 }
-.most__viewed__videos .card--featured .featured__content,
-.most__viewed__videos .card--featured .most__viewed__content,
-.most__viewed__videos .card--featured .latest__shirts__content,
-.most__viewed__videos .most__viewed--card .featured__content,
-.most__viewed__videos .most__viewed--card .most__viewed__content,
-.most__viewed__videos .most__viewed--card .latest__shirts__content,
-.most__viewed__videos .latest__shirts--card .featured__content,
-.most__viewed__videos .latest__shirts--card .most__viewed__content,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content,
-.latest__shirts .card--featured .featured__content,
-.latest__shirts .card--featured .most__viewed__content,
-.latest__shirts .card--featured .latest__shirts__content,
-.latest__shirts .most__viewed--card .featured__content,
-.latest__shirts .most__viewed--card .most__viewed__content,
-.latest__shirts .most__viewed--card .latest__shirts__content,
-.latest__shirts .latest__shirts--card .featured__content,
-.latest__shirts .latest__shirts--card .most__viewed__content,
-.latest__shirts .latest__shirts--card .latest__shirts__content,
-.start .card--featured .featured__content,
-.start .card--featured .most__viewed__content,
-.start .card--featured .latest__shirts__content,
-.start .most__viewed--card .featured__content,
-.start .most__viewed--card .most__viewed__content,
-.start .most__viewed--card .latest__shirts__content,
-.start .latest__shirts--card .featured__content,
-.start .latest__shirts--card .most__viewed__content,
-.start .latest__shirts--card .latest__shirts__content {
+.topic .card .card__content {
   background: #2C343A;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -258,222 +196,42 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.most__viewed__videos .card--featured .featured__content .description__card,
-.most__viewed__videos .card--featured .most__viewed__content .description__card,
-.most__viewed__videos .card--featured .latest__shirts__content .description__card,
-.most__viewed__videos .most__viewed--card .featured__content .description__card,
-.most__viewed__videos .most__viewed--card .most__viewed__content .description__card,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .description__card,
-.most__viewed__videos .latest__shirts--card .featured__content .description__card,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .description__card,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .description__card,
-.latest__shirts .card--featured .featured__content .description__card,
-.latest__shirts .card--featured .most__viewed__content .description__card,
-.latest__shirts .card--featured .latest__shirts__content .description__card,
-.latest__shirts .most__viewed--card .featured__content .description__card,
-.latest__shirts .most__viewed--card .most__viewed__content .description__card,
-.latest__shirts .most__viewed--card .latest__shirts__content .description__card,
-.latest__shirts .latest__shirts--card .featured__content .description__card,
-.latest__shirts .latest__shirts--card .most__viewed__content .description__card,
-.latest__shirts .latest__shirts--card .latest__shirts__content .description__card,
-.start .card--featured .featured__content .description__card,
-.start .card--featured .most__viewed__content .description__card,
-.start .card--featured .latest__shirts__content .description__card,
-.start .most__viewed--card .featured__content .description__card,
-.start .most__viewed--card .most__viewed__content .description__card,
-.start .most__viewed--card .latest__shirts__content .description__card,
-.start .latest__shirts--card .featured__content .description__card,
-.start .latest__shirts--card .most__viewed__content .description__card,
-.start .latest__shirts--card .latest__shirts__content .description__card {
+.topic .card .card__content .description__card {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   grid-column: span 2;
 }
-.most__viewed__videos .card--featured .featured__content .main__title__card,
-.most__viewed__videos .card--featured .featured__content .main__title__card,
-.most__viewed__videos .card--featured .most__viewed__content .main__title__card,
-.most__viewed__videos .card--featured .most__viewed__content .main__title__card,
-.most__viewed__videos .card--featured .latest__shirts__content .main__title__card,
-.most__viewed__videos .card--featured .latest__shirts__content .main__title__card,
-.most__viewed__videos .most__viewed--card .featured__content .main__title__card,
-.most__viewed__videos .most__viewed--card .featured__content .main__title__card,
-.most__viewed__videos .most__viewed--card .most__viewed__content .main__title__card,
-.most__viewed__videos .most__viewed--card .most__viewed__content .main__title__card,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .main__title__card,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .main__title__card,
-.most__viewed__videos .latest__shirts--card .featured__content .main__title__card,
-.most__viewed__videos .latest__shirts--card .featured__content .main__title__card,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .main__title__card,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .main__title__card,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .main__title__card,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .main__title__card,
-.latest__shirts .card--featured .featured__content .main__title__card,
-.latest__shirts .card--featured .featured__content .main__title__card,
-.latest__shirts .card--featured .most__viewed__content .main__title__card,
-.latest__shirts .card--featured .most__viewed__content .main__title__card,
-.latest__shirts .card--featured .latest__shirts__content .main__title__card,
-.latest__shirts .card--featured .latest__shirts__content .main__title__card,
-.latest__shirts .most__viewed--card .featured__content .main__title__card,
-.latest__shirts .most__viewed--card .featured__content .main__title__card,
-.latest__shirts .most__viewed--card .most__viewed__content .main__title__card,
-.latest__shirts .most__viewed--card .most__viewed__content .main__title__card,
-.latest__shirts .most__viewed--card .latest__shirts__content .main__title__card,
-.latest__shirts .most__viewed--card .latest__shirts__content .main__title__card,
-.latest__shirts .latest__shirts--card .featured__content .main__title__card,
-.latest__shirts .latest__shirts--card .featured__content .main__title__card,
-.latest__shirts .latest__shirts--card .most__viewed__content .main__title__card,
-.latest__shirts .latest__shirts--card .most__viewed__content .main__title__card,
-.latest__shirts .latest__shirts--card .latest__shirts__content .main__title__card,
-.latest__shirts .latest__shirts--card .latest__shirts__content .main__title__card,
-.start .card--featured .featured__content .main__title__card,
-.start .card--featured .featured__content .main__title__card,
-.start .card--featured .most__viewed__content .main__title__card,
-.start .card--featured .most__viewed__content .main__title__card,
-.start .card--featured .latest__shirts__content .main__title__card,
-.start .card--featured .latest__shirts__content .main__title__card,
-.start .most__viewed--card .featured__content .main__title__card,
-.start .most__viewed--card .featured__content .main__title__card,
-.start .most__viewed--card .most__viewed__content .main__title__card,
-.start .most__viewed--card .most__viewed__content .main__title__card,
-.start .most__viewed--card .latest__shirts__content .main__title__card,
-.start .most__viewed--card .latest__shirts__content .main__title__card,
-.start .latest__shirts--card .featured__content .main__title__card,
-.start .latest__shirts--card .featured__content .main__title__card,
-.start .latest__shirts--card .most__viewed__content .main__title__card,
-.start .latest__shirts--card .most__viewed__content .main__title__card,
-.start .latest__shirts--card .latest__shirts__content .main__title__card,
-.start .latest__shirts--card .latest__shirts__content .main__title__card {
+.topic .card .card__content .main__title__card {
   font-weight: 700;
   height: 48px;
   font-size: 18px;
   line-height: 24px;
   grid-column: span 2;
 }
-.most__viewed__videos .card--featured .featured__content .autor__card,
-.most__viewed__videos .card--featured .most__viewed__content .autor__card,
-.most__viewed__videos .card--featured .latest__shirts__content .autor__card,
-.most__viewed__videos .most__viewed--card .featured__content .autor__card,
-.most__viewed__videos .most__viewed--card .most__viewed__content .autor__card,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .autor__card,
-.most__viewed__videos .latest__shirts--card .featured__content .autor__card,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .autor__card,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .autor__card,
-.latest__shirts .card--featured .featured__content .autor__card,
-.latest__shirts .card--featured .most__viewed__content .autor__card,
-.latest__shirts .card--featured .latest__shirts__content .autor__card,
-.latest__shirts .most__viewed--card .featured__content .autor__card,
-.latest__shirts .most__viewed--card .most__viewed__content .autor__card,
-.latest__shirts .most__viewed--card .latest__shirts__content .autor__card,
-.latest__shirts .latest__shirts--card .featured__content .autor__card,
-.latest__shirts .latest__shirts--card .most__viewed__content .autor__card,
-.latest__shirts .latest__shirts--card .latest__shirts__content .autor__card,
-.start .card--featured .featured__content .autor__card,
-.start .card--featured .most__viewed__content .autor__card,
-.start .card--featured .latest__shirts__content .autor__card,
-.start .most__viewed--card .featured__content .autor__card,
-.start .most__viewed--card .most__viewed__content .autor__card,
-.start .most__viewed--card .latest__shirts__content .autor__card,
-.start .latest__shirts--card .featured__content .autor__card,
-.start .latest__shirts--card .most__viewed__content .autor__card,
-.start .latest__shirts--card .latest__shirts__content .autor__card {
+.topic .card .card__content .main__title__card--featured {
+  height: 24px;
+}
+.topic .card .card__content .autor__card {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #95999C;
   grid-column: span 2;
 }
-.most__viewed__videos .card--featured .featured__content .views__card,
-.most__viewed__videos .card--featured .most__viewed__content .views__card,
-.most__viewed__videos .card--featured .latest__shirts__content .views__card,
-.most__viewed__videos .most__viewed--card .featured__content .views__card,
-.most__viewed__videos .most__viewed--card .most__viewed__content .views__card,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .views__card,
-.most__viewed__videos .latest__shirts--card .featured__content .views__card,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .views__card,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .views__card,
-.latest__shirts .card--featured .featured__content .views__card,
-.latest__shirts .card--featured .most__viewed__content .views__card,
-.latest__shirts .card--featured .latest__shirts__content .views__card,
-.latest__shirts .most__viewed--card .featured__content .views__card,
-.latest__shirts .most__viewed--card .most__viewed__content .views__card,
-.latest__shirts .most__viewed--card .latest__shirts__content .views__card,
-.latest__shirts .latest__shirts--card .featured__content .views__card,
-.latest__shirts .latest__shirts--card .most__viewed__content .views__card,
-.latest__shirts .latest__shirts--card .latest__shirts__content .views__card,
-.start .card--featured .featured__content .views__card,
-.start .card--featured .most__viewed__content .views__card,
-.start .card--featured .latest__shirts__content .views__card,
-.start .most__viewed--card .featured__content .views__card,
-.start .most__viewed--card .most__viewed__content .views__card,
-.start .most__viewed--card .latest__shirts__content .views__card,
-.start .latest__shirts--card .featured__content .views__card,
-.start .latest__shirts--card .most__viewed__content .views__card,
-.start .latest__shirts--card .latest__shirts__content .views__card {
+.topic .card .card__content .views__card {
   color: #95999C;
   font-weight: 400;
   font-size: 14px;
   grid-column: 2;
   line-height: 24px;
 }
-.most__viewed__videos .card--featured .featured__content .views__card::before,
-.most__viewed__videos .card--featured .most__viewed__content .views__card::before,
-.most__viewed__videos .card--featured .latest__shirts__content .views__card::before,
-.most__viewed__videos .most__viewed--card .featured__content .views__card::before,
-.most__viewed__videos .most__viewed--card .most__viewed__content .views__card::before,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .views__card::before,
-.most__viewed__videos .latest__shirts--card .featured__content .views__card::before,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .views__card::before,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .views__card::before,
-.latest__shirts .card--featured .featured__content .views__card::before,
-.latest__shirts .card--featured .most__viewed__content .views__card::before,
-.latest__shirts .card--featured .latest__shirts__content .views__card::before,
-.latest__shirts .most__viewed--card .featured__content .views__card::before,
-.latest__shirts .most__viewed--card .most__viewed__content .views__card::before,
-.latest__shirts .most__viewed--card .latest__shirts__content .views__card::before,
-.latest__shirts .latest__shirts--card .featured__content .views__card::before,
-.latest__shirts .latest__shirts--card .most__viewed__content .views__card::before,
-.latest__shirts .latest__shirts--card .latest__shirts__content .views__card::before,
-.start .card--featured .featured__content .views__card::before,
-.start .card--featured .most__viewed__content .views__card::before,
-.start .card--featured .latest__shirts__content .views__card::before,
-.start .most__viewed--card .featured__content .views__card::before,
-.start .most__viewed--card .most__viewed__content .views__card::before,
-.start .most__viewed--card .latest__shirts__content .views__card::before,
-.start .latest__shirts--card .featured__content .views__card::before,
-.start .latest__shirts--card .most__viewed__content .views__card::before,
-.start .latest__shirts--card .latest__shirts__content .views__card::before {
+.topic .card .card__content .views__card::before {
   content: "\e90f";
   font-size: 13px;
   margin-right: 5px;
 }
-.most__viewed__videos .card--featured .featured__content .time__card,
-.most__viewed__videos .card--featured .most__viewed__content .time__card,
-.most__viewed__videos .card--featured .latest__shirts__content .time__card,
-.most__viewed__videos .most__viewed--card .featured__content .time__card,
-.most__viewed__videos .most__viewed--card .most__viewed__content .time__card,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .time__card,
-.most__viewed__videos .latest__shirts--card .featured__content .time__card,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .time__card,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .time__card,
-.latest__shirts .card--featured .featured__content .time__card,
-.latest__shirts .card--featured .most__viewed__content .time__card,
-.latest__shirts .card--featured .latest__shirts__content .time__card,
-.latest__shirts .most__viewed--card .featured__content .time__card,
-.latest__shirts .most__viewed--card .most__viewed__content .time__card,
-.latest__shirts .most__viewed--card .latest__shirts__content .time__card,
-.latest__shirts .latest__shirts--card .featured__content .time__card,
-.latest__shirts .latest__shirts--card .most__viewed__content .time__card,
-.latest__shirts .latest__shirts--card .latest__shirts__content .time__card,
-.start .card--featured .featured__content .time__card,
-.start .card--featured .most__viewed__content .time__card,
-.start .card--featured .latest__shirts__content .time__card,
-.start .most__viewed--card .featured__content .time__card,
-.start .most__viewed--card .most__viewed__content .time__card,
-.start .most__viewed--card .latest__shirts__content .time__card,
-.start .latest__shirts--card .featured__content .time__card,
-.start .latest__shirts--card .most__viewed__content .time__card,
-.start .latest__shirts--card .latest__shirts__content .time__card {
+.topic .card .card__content .time__card {
   color: #95999C;
   font-weight: 400;
   font-size: 14px;
@@ -481,91 +239,13 @@ body {
   grid-column: 1;
   align-self: center;
 }
-.most__viewed__videos .card--featured .featured__content .time__card::before,
-.most__viewed__videos .card--featured .most__viewed__content .time__card::before,
-.most__viewed__videos .card--featured .latest__shirts__content .time__card::before,
-.most__viewed__videos .most__viewed--card .featured__content .time__card::before,
-.most__viewed__videos .most__viewed--card .most__viewed__content .time__card::before,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .time__card::before,
-.most__viewed__videos .latest__shirts--card .featured__content .time__card::before,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .time__card::before,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .time__card::before,
-.latest__shirts .card--featured .featured__content .time__card::before,
-.latest__shirts .card--featured .most__viewed__content .time__card::before,
-.latest__shirts .card--featured .latest__shirts__content .time__card::before,
-.latest__shirts .most__viewed--card .featured__content .time__card::before,
-.latest__shirts .most__viewed--card .most__viewed__content .time__card::before,
-.latest__shirts .most__viewed--card .latest__shirts__content .time__card::before,
-.latest__shirts .latest__shirts--card .featured__content .time__card::before,
-.latest__shirts .latest__shirts--card .most__viewed__content .time__card::before,
-.latest__shirts .latest__shirts--card .latest__shirts__content .time__card::before,
-.start .card--featured .featured__content .time__card::before,
-.start .card--featured .most__viewed__content .time__card::before,
-.start .card--featured .latest__shirts__content .time__card::before,
-.start .most__viewed--card .featured__content .time__card::before,
-.start .most__viewed--card .most__viewed__content .time__card::before,
-.start .most__viewed--card .latest__shirts__content .time__card::before,
-.start .latest__shirts--card .featured__content .time__card::before,
-.start .latest__shirts--card .most__viewed__content .time__card::before,
-.start .latest__shirts--card .latest__shirts__content .time__card::before {
+.topic .card .card__content .time__card::before {
   content: "\e90c";
   font-size: 13px;
   margin-right: 5px;
 }
-.most__viewed__videos .card--featured .featured__content .button__card--most__viewed,
-.most__viewed__videos .card--featured .featured__content .button__card--featured,
-.most__viewed__videos .card--featured .most__viewed__content .button__card--most__viewed,
-.most__viewed__videos .card--featured .most__viewed__content .button__card--featured,
-.most__viewed__videos .card--featured .latest__shirts__content .button__card--most__viewed,
-.most__viewed__videos .card--featured .latest__shirts__content .button__card--featured,
-.most__viewed__videos .most__viewed--card .featured__content .button__card--most__viewed,
-.most__viewed__videos .most__viewed--card .featured__content .button__card--featured,
-.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--most__viewed,
-.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--featured,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .button__card--most__viewed,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .button__card--featured,
-.most__viewed__videos .latest__shirts--card .featured__content .button__card--most__viewed,
-.most__viewed__videos .latest__shirts--card .featured__content .button__card--featured,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .button__card--most__viewed,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .button__card--featured,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .button__card--most__viewed,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .button__card--featured,
-.latest__shirts .card--featured .featured__content .button__card--most__viewed,
-.latest__shirts .card--featured .featured__content .button__card--featured,
-.latest__shirts .card--featured .most__viewed__content .button__card--most__viewed,
-.latest__shirts .card--featured .most__viewed__content .button__card--featured,
-.latest__shirts .card--featured .latest__shirts__content .button__card--most__viewed,
-.latest__shirts .card--featured .latest__shirts__content .button__card--featured,
-.latest__shirts .most__viewed--card .featured__content .button__card--most__viewed,
-.latest__shirts .most__viewed--card .featured__content .button__card--featured,
-.latest__shirts .most__viewed--card .most__viewed__content .button__card--most__viewed,
-.latest__shirts .most__viewed--card .most__viewed__content .button__card--featured,
-.latest__shirts .most__viewed--card .latest__shirts__content .button__card--most__viewed,
-.latest__shirts .most__viewed--card .latest__shirts__content .button__card--featured,
-.latest__shirts .latest__shirts--card .featured__content .button__card--most__viewed,
-.latest__shirts .latest__shirts--card .featured__content .button__card--featured,
-.latest__shirts .latest__shirts--card .most__viewed__content .button__card--most__viewed,
-.latest__shirts .latest__shirts--card .most__viewed__content .button__card--featured,
-.latest__shirts .latest__shirts--card .latest__shirts__content .button__card--most__viewed,
-.latest__shirts .latest__shirts--card .latest__shirts__content .button__card--featured,
-.start .card--featured .featured__content .button__card--most__viewed,
-.start .card--featured .featured__content .button__card--featured,
-.start .card--featured .most__viewed__content .button__card--most__viewed,
-.start .card--featured .most__viewed__content .button__card--featured,
-.start .card--featured .latest__shirts__content .button__card--most__viewed,
-.start .card--featured .latest__shirts__content .button__card--featured,
-.start .most__viewed--card .featured__content .button__card--most__viewed,
-.start .most__viewed--card .featured__content .button__card--featured,
-.start .most__viewed--card .most__viewed__content .button__card--most__viewed,
-.start .most__viewed--card .most__viewed__content .button__card--featured,
-.start .most__viewed--card .latest__shirts__content .button__card--most__viewed,
-.start .most__viewed--card .latest__shirts__content .button__card--featured,
-.start .latest__shirts--card .featured__content .button__card--most__viewed,
-.start .latest__shirts--card .featured__content .button__card--featured,
-.start .latest__shirts--card .most__viewed__content .button__card--most__viewed,
-.start .latest__shirts--card .most__viewed__content .button__card--featured,
-.start .latest__shirts--card .latest__shirts__content .button__card--most__viewed,
-.start .latest__shirts--card .latest__shirts__content .button__card--featured {
+.topic .card .card__content .button__card--most__viewed,
+.topic .card .card__content .button__card--featured {
   height: 40px;
   width: 40px;
   background: #0480DC;
@@ -578,94 +258,16 @@ body {
   cursor: pointer;
   justify-self: flex-end;
 }
-.most__viewed__videos .card--featured .featured__content .button__card--most__viewed i::before,
-.most__viewed__videos .card--featured .most__viewed__content .button__card--most__viewed i::before,
-.most__viewed__videos .card--featured .latest__shirts__content .button__card--most__viewed i::before,
-.most__viewed__videos .most__viewed--card .featured__content .button__card--most__viewed i::before,
-.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--most__viewed i::before,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .button__card--most__viewed i::before,
-.most__viewed__videos .latest__shirts--card .featured__content .button__card--most__viewed i::before,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .button__card--most__viewed i::before,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .button__card--most__viewed i::before,
-.latest__shirts .card--featured .featured__content .button__card--most__viewed i::before,
-.latest__shirts .card--featured .most__viewed__content .button__card--most__viewed i::before,
-.latest__shirts .card--featured .latest__shirts__content .button__card--most__viewed i::before,
-.latest__shirts .most__viewed--card .featured__content .button__card--most__viewed i::before,
-.latest__shirts .most__viewed--card .most__viewed__content .button__card--most__viewed i::before,
-.latest__shirts .most__viewed--card .latest__shirts__content .button__card--most__viewed i::before,
-.latest__shirts .latest__shirts--card .featured__content .button__card--most__viewed i::before,
-.latest__shirts .latest__shirts--card .most__viewed__content .button__card--most__viewed i::before,
-.latest__shirts .latest__shirts--card .latest__shirts__content .button__card--most__viewed i::before,
-.start .card--featured .featured__content .button__card--most__viewed i::before,
-.start .card--featured .most__viewed__content .button__card--most__viewed i::before,
-.start .card--featured .latest__shirts__content .button__card--most__viewed i::before,
-.start .most__viewed--card .featured__content .button__card--most__viewed i::before,
-.start .most__viewed--card .most__viewed__content .button__card--most__viewed i::before,
-.start .most__viewed--card .latest__shirts__content .button__card--most__viewed i::before,
-.start .latest__shirts--card .featured__content .button__card--most__viewed i::before,
-.start .latest__shirts--card .most__viewed__content .button__card--most__viewed i::before,
-.start .latest__shirts--card .latest__shirts__content .button__card--most__viewed i::before {
+.topic .card .card__content .button__card--most__viewed i::before {
   content: "\e90b";
   font-size: 24px;
 }
-.most__viewed__videos .card--featured .featured__content .button__card--featured,
-.most__viewed__videos .card--featured .most__viewed__content .button__card--featured,
-.most__viewed__videos .card--featured .latest__shirts__content .button__card--featured,
-.most__viewed__videos .most__viewed--card .featured__content .button__card--featured,
-.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--featured,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .button__card--featured,
-.most__viewed__videos .latest__shirts--card .featured__content .button__card--featured,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .button__card--featured,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .button__card--featured,
-.latest__shirts .card--featured .featured__content .button__card--featured,
-.latest__shirts .card--featured .most__viewed__content .button__card--featured,
-.latest__shirts .card--featured .latest__shirts__content .button__card--featured,
-.latest__shirts .most__viewed--card .featured__content .button__card--featured,
-.latest__shirts .most__viewed--card .most__viewed__content .button__card--featured,
-.latest__shirts .most__viewed--card .latest__shirts__content .button__card--featured,
-.latest__shirts .latest__shirts--card .featured__content .button__card--featured,
-.latest__shirts .latest__shirts--card .most__viewed__content .button__card--featured,
-.latest__shirts .latest__shirts--card .latest__shirts__content .button__card--featured,
-.start .card--featured .featured__content .button__card--featured,
-.start .card--featured .most__viewed__content .button__card--featured,
-.start .card--featured .latest__shirts__content .button__card--featured,
-.start .most__viewed--card .featured__content .button__card--featured,
-.start .most__viewed--card .most__viewed__content .button__card--featured,
-.start .most__viewed--card .latest__shirts__content .button__card--featured,
-.start .latest__shirts--card .featured__content .button__card--featured,
-.start .latest__shirts--card .most__viewed__content .button__card--featured,
-.start .latest__shirts--card .latest__shirts__content .button__card--featured {
+.topic .card .card__content .button__card--featured {
   width: 100%;
   grid-column: span 2;
   justify-content: center;
 }
-.most__viewed__videos .card--featured .featured__content .button__card--featured i::before,
-.most__viewed__videos .card--featured .most__viewed__content .button__card--featured i::before,
-.most__viewed__videos .card--featured .latest__shirts__content .button__card--featured i::before,
-.most__viewed__videos .most__viewed--card .featured__content .button__card--featured i::before,
-.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--featured i::before,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .button__card--featured i::before,
-.most__viewed__videos .latest__shirts--card .featured__content .button__card--featured i::before,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .button__card--featured i::before,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .button__card--featured i::before,
-.latest__shirts .card--featured .featured__content .button__card--featured i::before,
-.latest__shirts .card--featured .most__viewed__content .button__card--featured i::before,
-.latest__shirts .card--featured .latest__shirts__content .button__card--featured i::before,
-.latest__shirts .most__viewed--card .featured__content .button__card--featured i::before,
-.latest__shirts .most__viewed--card .most__viewed__content .button__card--featured i::before,
-.latest__shirts .most__viewed--card .latest__shirts__content .button__card--featured i::before,
-.latest__shirts .latest__shirts--card .featured__content .button__card--featured i::before,
-.latest__shirts .latest__shirts--card .most__viewed__content .button__card--featured i::before,
-.latest__shirts .latest__shirts--card .latest__shirts__content .button__card--featured i::before,
-.start .card--featured .featured__content .button__card--featured i::before,
-.start .card--featured .most__viewed__content .button__card--featured i::before,
-.start .card--featured .latest__shirts__content .button__card--featured i::before,
-.start .most__viewed--card .featured__content .button__card--featured i::before,
-.start .most__viewed--card .most__viewed__content .button__card--featured i::before,
-.start .most__viewed--card .latest__shirts__content .button__card--featured i::before,
-.start .latest__shirts--card .featured__content .button__card--featured i::before,
-.start .latest__shirts--card .most__viewed__content .button__card--featured i::before,
-.start .latest__shirts--card .latest__shirts__content .button__card--featured i::before {
+.topic .card .card__content .button__card--featured i::before {
   content: "\e90b";
   font-size: 24px;
 }
@@ -686,30 +288,13 @@ body {
   padding-right: 4.4%;
 }
 
-.most__viewed__videos .most__viewed--card .img__most__viewed__main__banner--mobile,
-.most__viewed__videos .latest__shirts--card .img__most__viewed__main__banner--mobile,
-.latest__shirts .most__viewed--card .img__most__viewed__main__banner--mobile,
-.latest__shirts .latest__shirts--card .img__most__viewed__main__banner--mobile {
+.topic .card .img__most__viewed__main__banner--mobile {
   height: 336px;
 }
-.most__viewed__videos .most__viewed--card .most__viewed__content .main__title__card--main--banner,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .main__title__card--main--banner,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .main__title__card--main--banner,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .main__title__card--main--banner,
-.latest__shirts .most__viewed--card .most__viewed__content .main__title__card--main--banner,
-.latest__shirts .most__viewed--card .latest__shirts__content .main__title__card--main--banner,
-.latest__shirts .latest__shirts--card .most__viewed__content .main__title__card--main--banner,
-.latest__shirts .latest__shirts--card .latest__shirts__content .main__title__card--main--banner {
+.topic .card .card__content .main__title__card--main--banner {
   height: 24px;
 }
-.most__viewed__videos .most__viewed--card .most__viewed__content .money__card,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .money__card,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .money__card,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .money__card,
-.latest__shirts .most__viewed--card .most__viewed__content .money__card,
-.latest__shirts .most__viewed--card .latest__shirts__content .money__card,
-.latest__shirts .latest__shirts--card .most__viewed__content .money__card,
-.latest__shirts .latest__shirts--card .latest__shirts__content .money__card {
+.topic .card .card__content .money__card {
   color: #95999C;
   font-weight: 400;
   font-size: 14px;
@@ -717,75 +302,33 @@ body {
   grid-column: 1;
   align-self: center;
 }
-.most__viewed__videos .most__viewed--card .most__viewed__content .money__card::before,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .money__card::before,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .money__card::before,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .money__card::before,
-.latest__shirts .most__viewed--card .most__viewed__content .money__card::before,
-.latest__shirts .most__viewed--card .latest__shirts__content .money__card::before,
-.latest__shirts .latest__shirts--card .most__viewed__content .money__card::before,
-.latest__shirts .latest__shirts--card .latest__shirts__content .money__card::before {
+.topic .card .card__content .money__card::before {
   content: "\e905";
   font-size: 15px;
   margin-right: 5px;
   vertical-align: bottom;
 }
-.most__viewed__videos .most__viewed--card .most__viewed__content .views__card,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .views__card,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .views__card,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .views__card,
-.latest__shirts .most__viewed--card .most__viewed__content .views__card,
-.latest__shirts .most__viewed--card .latest__shirts__content .views__card,
-.latest__shirts .latest__shirts--card .most__viewed__content .views__card,
-.latest__shirts .latest__shirts--card .latest__shirts__content .views__card {
+.topic .card .card__content .views__card {
   color: #95999C;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   grid-column: 2;
 }
-.most__viewed__videos .most__viewed--card .most__viewed__content .views__card::before,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .views__card::before,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .views__card::before,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .views__card::before,
-.latest__shirts .most__viewed--card .most__viewed__content .views__card::before,
-.latest__shirts .most__viewed--card .latest__shirts__content .views__card::before,
-.latest__shirts .latest__shirts--card .most__viewed__content .views__card::before,
-.latest__shirts .latest__shirts--card .latest__shirts__content .views__card::before {
+.topic .card .card__content .views__card::before {
   content: "\e90f";
   font-size: 13px;
   margin-right: 5px;
 }
-.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--main--banner,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .button__card--main--banner,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .button__card--main--banner,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .button__card--main--banner,
-.latest__shirts .most__viewed--card .most__viewed__content .button__card--main--banner,
-.latest__shirts .most__viewed--card .latest__shirts__content .button__card--main--banner,
-.latest__shirts .latest__shirts--card .most__viewed__content .button__card--main--banner,
-.latest__shirts .latest__shirts--card .latest__shirts__content .button__card--main--banner {
+.topic .card .card__content .button__card--main--banner {
   width: 100%;
   justify-content: center;
   grid-column: span 2;
 }
-.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--main--banner i::before,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .button__card--main--banner i::before,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .button__card--main--banner i::before,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .button__card--main--banner i::before,
-.latest__shirts .most__viewed--card .most__viewed__content .button__card--main--banner i::before,
-.latest__shirts .most__viewed--card .latest__shirts__content .button__card--main--banner i::before,
-.latest__shirts .latest__shirts--card .most__viewed__content .button__card--main--banner i::before,
-.latest__shirts .latest__shirts--card .latest__shirts__content .button__card--main--banner i::before {
+.topic .card .card__content .button__card--main--banner i::before {
   content: "\e901";
   font-size: 24px;
 }
-.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--latest__shirts i::before,
-.most__viewed__videos .most__viewed--card .latest__shirts__content .button__card--latest__shirts i::before,
-.most__viewed__videos .latest__shirts--card .most__viewed__content .button__card--latest__shirts i::before,
-.most__viewed__videos .latest__shirts--card .latest__shirts__content .button__card--latest__shirts i::before,
-.latest__shirts .most__viewed--card .most__viewed__content .button__card--latest__shirts i::before,
-.latest__shirts .most__viewed--card .latest__shirts__content .button__card--latest__shirts i::before,
-.latest__shirts .latest__shirts--card .most__viewed__content .button__card--latest__shirts i::before,
-.latest__shirts .latest__shirts--card .latest__shirts__content .button__card--latest__shirts i::before {
+.topic .card .card__content .button__card--latest__shirts i::before {
   content: "\e901";
 }/*# sourceMappingURL=style.css.map */
