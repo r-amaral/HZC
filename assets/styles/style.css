@@ -244,4 +244,151 @@ body {
 .start .card--featured .featured__content .button__card--featured i::before {
   content: "\e90b";
   font-size: 24px;
+}
+
+@font-face {
+  font-family: "icones";
+  src: url(../font/icones.ttf);
+}
+body {
+  background-color: #1D232A;
+  font-family: "Open Sans", "icones", sans-serif;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 4.4%;
+  padding-right: 4.4%;
+}
+
+.most__viewed__videos {
+  margin-bottom: 16px;
+  display: grid;
+  gap: 16px;
+}
+.most__viewed__videos h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+}
+.most__viewed__videos .most__viewed--card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.most__viewed__videos .most__viewed--card .img__most__viewed--mobile {
+  width: 100%;
+  height: 160px;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content {
+  background: #2C343A;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -moz-column-gap: 44px;
+       column-gap: 44px;
+  row-gap: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .main__title__card {
+  font-weight: 700;
+  height: 48px;
+  font-size: 18px;
+  line-height: 24px;
+  grid-column: span 2;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .autor__card {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #95999C;
+  grid-column: span 2;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .time__card {
+  color: #95999C;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  grid-column: 1;
+  align-self: center;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .time__card::before {
+  content: "\e90c";
+  font-size: 13px;
+  margin-right: 5px;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--most__viewed {
+  height: 40px;
+  width: 40px;
+  background: #0480DC;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  grid-column: 2;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--most__viewed i::before {
+  content: "\e90b";
+  font-size: 24px;
+}
+
+@font-face {
+  font-family: "icones";
+  src: url(../font/icones.ttf);
+}
+body {
+  background-color: #1D232A;
+  font-family: "Open Sans", "icones", sans-serif;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 4.4%;
+  padding-right: 4.4%;
+}
+
+.most__viewed__videos .most__viewed--card .img__most__viewed__main__banner--mobile {
+  height: 336px;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .main__title__card--main--banner {
+  height: 24px;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .money__card {
+  color: #95999C;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  grid-column: 1;
+  align-self: center;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .money__card::before {
+  content: "\e905";
+  font-size: 15px;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .views__card {
+  color: #95999C;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  grid-column: 2;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .views__card::before {
+  content: "\e90f";
+  font-size: 13px;
+  margin-right: 5px;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--main--banner {
+  width: 100%;
+  justify-content: center;
+  grid-column: span 2;
+}
+.most__viewed__videos .most__viewed--card .most__viewed__content .button__card--main--banner i::before {
+  content: "\e901";
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */
