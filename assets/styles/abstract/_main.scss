@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+$main-background-color: #1D232A;
+$secondary-background-color: #15191C;
+$card-color: #2C343A;
+$main-font: #FFFFFF;
+$alternative-color: #95999C;
+$link-color: #0480DC;
+$button-color: #0480DC;
+
+body {
+    background-color: #1D232A;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: $main-font;
+    box-sizing: border-box;
+}

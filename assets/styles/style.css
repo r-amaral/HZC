@@ -1,1 +1,129 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "icones";
+  src: url(../font/icones.ttf);
+}
+body {
+  background-color: #1D232A;
+  font-family: "Open Sans", "icones", sans-serif;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "icones";
+  src: url(../font/icones.ttf);
+}
+body {
+  background-color: #1D232A;
+  font-family: "Open Sans", "icones", sans-serif;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.header__main {
+  background-color: #15191C;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 56px;
+  padding: 8px 16px;
+}
+.header__main .header__menu {
+  height: 24px;
+  width: 24px;
+  grid-column: 1;
+  cursor: pointer;
+}
+.header__main .header__menu i::before {
+  content: "\e904";
+  font-size: 24px;
+}
+.header__main .mobile__logo {
+  width: 40px;
+  height: 40px;
+  grid-columns: 2;
+  justify-self: center;
+}
+.header__main .header__notification {
+  height: 24px;
+  width: 24px;
+  justify-self: flex-end;
+  grid-columns: 3;
+}
+.header__main .header__notification i::before {
+  content: "\e906";
+  font-size: 24px;
+}
+
+@font-face {
+  font-family: "icones";
+  src: url(../font/icones.ttf);
+}
+body {
+  background-color: #1D232A;
+  font-family: "Open Sans", "icones", sans-serif;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.lateral__menu {
+  background: #15191C;
+  height: 100vh;
+  width: 75vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  position: absolute;
+  left: -100vw;
+  transition: 0.5s;
+}
+.lateral__menu .lateral__menu--logo {
+  width: 118px;
+  height: 118px;
+  justify-self: center;
+}
+.lateral__menu .lateral__menu__list {
+  margin-top: 35px;
+}
+.lateral__menu .lateral__menu__list .menu__list--item {
+  height: 64px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  padding-left: 64px;
+  display: grid;
+  align-items: center;
+}
+.lateral__menu .lateral__menu__list .menu__list__link--active {
+  color: #ffffff;
+  padding-left: 56px;
+  border-left: 8px solid white;
+}
+.lateral__menu .lateral__menu__list .menu__list--item i::before {
+  position: absolute;
+  left: 26px;
+  font-size: 24px;
+}
+.lateral__menu .lateral__menu__list .menu__list--item:nth-child(1) i::before {
+  content: "\e902";
+}
+.lateral__menu .lateral__menu__list .menu__list--item:nth-child(2) i::before {
+  content: "\e90e";
+}
+.lateral__menu .lateral__menu__list .menu__list--item:nth-child(3) i::before {
+  content: "\e909";
+}
+.lateral__menu .lateral__menu__list .menu__list--item:nth-child(4) i::before {
+  content: "\e903";
+}
+.lateral__menu .lateral__menu__list .menu__list--item:nth-child(5) i::before {
+  content: "\e900";
+}
+.lateral__menu .lateral__menu__list .menu__list--item:nth-child(6) i::before {
+  content: "\e90a";
+}
+
+.active__menu {
+  transition: 0.5s;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */

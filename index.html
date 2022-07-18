@@ -5,12 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.scss">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>HZC | Home</title>
 </head>
 
 <body>
+    <header class='header__main'>
+        <button class='header__menu'><i></i></button>
+        <img class='mobile__logo' src="./assets/img/logo.svg" alt="Logo da Hzc">
+        <button class='header__notification'><i></i></button>
+    </header>
 
+    <nav class="lateral__menu">
+        <img class='lateral__menu--logo' src="./assets/img/logo.svg" alt="Logo da Hzc">
+        <ul class="lateral__menu__list">
+            <li class="menu__list--item menu__list__link--active "><a href="#"><i></i>Inicio</a></li>
+            <li class="menu__list--item"><a href="#"><i></i>Videos</a></li>
+            <li class="menu__list--item"><a href="#"><i></i>Picos</a></li>
+            <li class="menu__list--item"><a href="#"><i></i>Integrantes</a></li>
+            <li class="menu__list--item"><a href="#"><i></i>Camisas</a></li>
+            <li class="menu__list--item"><a href="#"><i></i>Pinturas</a></li>
+        </ul>
+    </nav>
+
+    <script src="./assets/scripts/lateral_menu.js"></script>
 </body>
 
 </html>

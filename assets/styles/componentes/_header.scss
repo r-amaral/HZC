@@ -1,0 +1,42 @@
+@import '../abstract/_main.scss';
+
+.header__main {
+    background-color: $secondary-background-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 56px;
+    padding: 8px 16px;
+
+
+    .header__menu {
+        height: 24px;
+        width: 24px;
+        grid-column: 1;
+        cursor: pointer;
+    }
+
+    .header__menu i::before {
+        content: '\e904';
+        font-size: 24px;
+    }
+
+    .mobile__logo {
+        width: 40px;
+        height: 40px;
+        grid-columns: 2;
+        justify-self: center;
+    }
+
+    .header__notification {
+        height: 24px;
+        width: 24px;
+        justify-self: flex-end;
+        grid-columns: 3;
+    }
+
+    .header__notification i::before {
+        content: '\e906';
+        font-size: 24px;
+    }
+}
