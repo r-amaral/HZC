@@ -1,9 +1,13 @@
 @import '../abstract/_main.scss';
 
-.most__viewed__videos {
-    margin-bottom: 16px;
+
+.most__viewed__videos,
+.latest__shirts,
+.start {
+    margin-bottom: 24px;
+    margin-top: 16px;
     display: grid;
-    gap: 16px;
+    gap: 20px;
 
     h2 {
         font-weight: 700;
@@ -11,16 +15,26 @@
         line-height: 32px;
     }
 
-    .most__viewed--card {
+    .card--featured,
+    .most__viewed--card,
+    .latest__shirts--card {
         border-radius: 16px;
         overflow: hidden;
 
-        .img__most__viewed--mobile {
+        .img__featured--mobile {
+            width: 100%;
+            height: 306px;
+        }
+
+        .img__most__viewed--mobile,
+        .img__latest__shirts--mobile {
             width: 100%;
             height: 160px;
         }
 
-        .most__viewed__content {
+        .featured__content,
+        .most__viewed__content,
+        .latest__shirts__content {
             background: $card-color;
             display: grid;
             grid-template-columns: auto 1fr;
@@ -29,6 +43,14 @@
             padding-top: 16px;
             padding-bottom: 16px;
 
+            .description__card {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                grid-column: span 2;
+            }
+
+            .main__title__card,
             .main__title__card {
                 font-weight: 700;
                 height: 48px;
@@ -43,6 +65,20 @@
                 line-height: 24px;
                 color: $alternative-color;
                 grid-column: span 2;
+            }
+
+            .views__card {
+                color: $alternative-color;
+                font-weight: 400;
+                font-size: 14px;
+                grid-column: 2;
+                line-height: 24px;
+            }
+
+            .views__card::before {
+                content: '\e90f';
+                font-size: 13px;
+                margin-right: 5px;
             }
 
             .time__card {
@@ -60,7 +96,8 @@
                 margin-right: 5px;
             }
 
-            .button__card--most__viewed {
+            .button__card--most__viewed,
+            .button__card--featured {
                 height: 40px;
                 width: 40px;
                 background: #0480DC;
@@ -75,6 +112,17 @@
             }
 
             .button__card--most__viewed i::before {
+                content: '\e90b';
+                font-size: 24px;
+            }
+
+            .button__card--featured {
+                width: 100%;
+                grid-column: span 2;
+                justify-content: center;
+            }
+
+            .button__card--featured i::before {
                 content: '\e90b';
                 font-size: 24px;
             }

@@ -1,5 +1,9 @@
 @import '../abstract/_main.scss';
 
+.lock__menu {
+    overflow: hidden;
+}
+
 .lateral__menu {
     background: $secondary-background-color;
     height: 100vh;

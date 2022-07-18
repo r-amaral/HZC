@@ -1,14 +1,17 @@
 @import '../abstract/_main.scss';
 
-.most__viewed__videos {
+.most__viewed__videos,
+.latest__shirts {
 
-    .most__viewed--card {
+    .most__viewed--card,
+    .latest__shirts--card {
 
         .img__most__viewed__main__banner--mobile {
             height: 336px;
         }
 
-        .most__viewed__content {
+        .most__viewed__content,
+        .latest__shirts__content {
 
             .main__title__card--main--banner {
                 height: 24px;
@@ -54,6 +57,10 @@
             .button__card--main--banner i::before {
                 content: '\e901';
                 font-size: 24px;
+            }
+
+            .button__card--latest__shirts i::before {
+                content: '\e901';
             }
         }
     }
