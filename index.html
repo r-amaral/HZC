@@ -14,10 +14,19 @@
 </head>
 
 <body>
-    <header class='header__main'>
-        <button class='header__menu'><i></i></button>
-        <img class='mobile__logo' src="./assets/img/logo.svg" alt="Logo da Hzc">
+    <header class='header__main container'>
+
+        <button class='header__menu header__mobile'><i></i></button>
+        <img class='mobile__logo header__mobile' src="./assets/img/logo.svg" alt="Logo da Hzc">
+
+        <div class='header__desktop'>
+            <img class='profile__picture' src="./assets/img/profile_1.png" alt="Perfil de Usuário">
+            <p>Bruno Lopes</p>
+            <select></select>
+        </div>
+
         <button class='header__notification'><i></i></button>
+
     </header>
 
     <nav class="lateral__menu">
@@ -36,7 +45,7 @@
         <section class='topic'>
             <h2>Início</h2>
             <article class='card'>
-                <img class='banner__mobile img__featured--mobile' src="./assets/img/banner-mobile_1.png"
+                <img class='img__featured--mobile' src="./assets/img/banner-mobile_1.png"
                     alt="Banner Video em destaque">
                 <div class='card__content container'>
                     <h3 class='description__card'>Vídeo em destaque</h3>
@@ -44,54 +53,54 @@
                     <p class='autor__card'>Bruno Lopes</p>
                     <span class='time__card'>33 minutos</span>
                     <span class='views__card'>53 visualizações</span>
-                    <button class='button__card--featured'><i></i>Assistir Agora</button>
+                    <button class='button__card button__card--featured'><i></i>Assistir Agora</button>
                 </div>
             </article>
         </section>
         <section class='topic'>
             <h2>Vídeos mais vistos</h2>
             <article class='card'>
-                <img class='banner__mobile img__most__viewed--mobile' src="./assets/img/video_1.png"
+                <img class='img__most__viewed--mobile' src="./assets/img/video_1.png"
                     alt="Primeiro banner video mais visto">
                 <div class='card__content container'>
                     <p class='autor__card'>André Soares</p>
                     <h4 class="main__title__card">HZC - Tudo sem Padrin</h4>
                     <span class='time__card'>33 minutos</span>
-                    <button class='button__card--most__viewed'><i></i></button>
+                    <button class='button__card button__card--most__viewed'><i></i></button>
                 </div>
             </article>
             <article class='card'>
-                <img class='banner__mobile img__most__viewed--mobile' src="./assets/img/video_2.png"
+                <img class='img__most__viewed--mobile' src="./assets/img/video_2.png"
                     alt="Segundo banner video mais visto">
                 <div class='card__content container'>
                     <p class='autor__card'>Bruno Lopes</p>
                     <h4 class="main__title__card">HZC - Enter The Hu-flez</h4>
                     <span class='time__card'>33 minutos</span>
-                    <button class='button__card--most__viewed'><i></i></button>
+                    <button class='button__card button__card--most__viewed'><i></i></button>
                 </div>
             </article>
             <article class='card'>
-                <img class='banner__mobile img__most__viewed--mobile' src="./assets/img/video_3.png"
+                <img class='img__most__viewed--mobile' src="./assets/img/video_3.png"
                     alt="Terceiro banner video mais visto">
                 <div class='card__content container'>
                     <p class='autor__card'>Luiza Sampaio</p>
                     <h4 class="main__title__card">HZC - Vol.3</h4>
                     <span class='time__card'>33 minutos</span>
-                    <button class='button__card--most__viewed'><i></i></button>
+                    <button class='button__card button__card--most__viewed'><i></i></button>
                 </div>
             </article>
             <article class='card'>
-                <img class='banner__mobile img__most__viewed--mobile' src="./assets/img/video_4.png"
+                <img class='img__most__viewed--mobile' src="./assets/img/video_4.png"
                     alt="Quarti banner video mais visto">
                 <div class='card__content container'>
                     <p class='autor__card'>Bruno Lopes</p>
                     <h4 class="main__title__card">HZC - Love Machine</h4>
                     <span class='time__card'>33 minutos</span>
-                    <button class='button__card--most__viewed'><i></i></button>
+                    <button class='button__card button__card--most__viewed'><i></i></button>
                 </div>
             </article>
             <article class='card'>
-                <img class='banner__mobile img__most__viewed--mobile img__most__viewed__main__banner--mobile '
+                <img class='img__most__viewed--mobile img__most__viewed__main__banner--mobile'
                     src="./assets/img/banner-mobile_2.png" alt="Banner primeiro video mais visto">
                 <div class='card__content container'>
                     <h3 class='description__card'>Nova Arte</h3>
@@ -99,50 +108,55 @@
                     <p class='autor__card'>Bruno Lopes</p>
                     <span class='money__card'>33,33</span>
                     <span class='views__card'>53 visualizações</span>
-                    <button class='button__card--most__viewed button__card--main--banner'><i></i>Comprar Agora</button>
+                    <button class='button__card button__card--main--banner'><i></i>Comprar
+                        Agora</button>
                 </div>
             </article>
         </section>
         <section class='topic'>
             <h2>Camisas mais recentes</h2>
             <article class='card'>
-                <img class='banner__mobile img__latest__shirts--mobile' src="./assets/img/produto_1.png"
+                <img class='img__latest__shirts--mobile' src="./assets/img/produto_1.png"
                     alt="Primeiro banner produto mais vendido">
                 <div class='card__content container'>
                     <p class='autor__card'>André Soares</p>
                     <h4 class="main__title__card">HZC - Tudo sem Padrin</h4>
                     <span class='money__card'>33,33</span>
-                    <button class='button__card--most__viewed button__card--latest__shirts'><i></i></button>
+                    <button
+                        class='button__card button__card--most__viewed button__card--latest__shirts'><i></i></button>
                 </div>
             </article>
             <article class='card'>
-                <img class='banner__mobile img__latest__shirts--mobile' src="./assets/img/produto_2.png"
+                <img class='img__latest__shirts--mobile' src="./assets/img/produto_2.png"
                     alt="Segundo banner produto mais vendido">
                 <div class='card__content container'>
                     <p class='autor__card'>Bruno Lopes</p>
                     <h4 class="main__title__card">Huflez Crew Philosophy Club</h4>
                     <span class='money__card'>33,33</span>
-                    <button class='button__card--most__viewed button__card--latest__shirts'><i></i></button>
+                    <button
+                        class='button__card button__card--most__viewed button__card--latest__shirts'><i></i></button>
                 </div>
             </article>
             <article class='card'>
-                <img class='banner__mobile img__latest__shirts--mobile' src="./assets/img/produto_3.png"
+                <img class='img__latest__shirts--mobile' src="./assets/img/produto_3.png"
                     alt="Terceiro banner produto mais vendido">
                 <div class='card__content container'>
                     <p class='autor__card'>Luiza Sampaio</p>
                     <h4 class="main__title__card">Corujita noturna</h4>
                     <span class='money__card'>33,33</span>
-                    <button class='button__card--most__viewed button__card--latest__shirts'><i></i></button>
+                    <button
+                        class='button__card button__card--most__viewed button__card--latest__shirts'><i></i></button>
                 </div>
             </article>
             <article class='card'>
-                <img class='banner__mobile img__latest__shirts--mobile' src="./assets/img/produto_4.png"
+                <img class='img__latest__shirts--mobile' src="./assets/img/produto_4.png"
                     alt="Quarto banner produto mais vendido">
                 <div class='card__content container'>
                     <p class='autor__card'>Bruno Lopes</p>
                     <h4 class="main__title__card">GGG - Gatin G Gorro</h4>
                     <span class='money__card'>33,33</span>
-                    <button class='button__card--most__viewed button__card--latest__shirts'><i></i></button>
+                    <button
+                        class='button__card button__card--most__viewed button__card--latest__shirts'><i></i></button>
                 </div>
             </article>
         </section>

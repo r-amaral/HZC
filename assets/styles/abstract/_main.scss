@@ -22,3 +22,25 @@ body {
     padding-left: 4.4%;
     padding-right: 4.4%;
 }
+
+@media screen and (min-width:1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    header {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    nav {
+        grid-column: 1;
+        grid-row: span 2;
+    }
+
+    main {
+        grid-column: 2;
+        grid-row: span 2;
+    }
+}

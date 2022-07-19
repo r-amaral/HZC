@@ -27,6 +27,10 @@
             height: 160px;
         }
 
+        .img__most__viewed__main__banner--mobile {
+            height: 336px;
+        }
+
         .card__content {
             background: $card-color;
             display: grid;
@@ -51,7 +55,8 @@
                 grid-column: span 2;
             }
 
-            .main__title__card--featured {
+            .main__title__card--featured,
+            .main__title__card--main--banner {
                 height: 24px;
             }
 
@@ -77,6 +82,22 @@
                 margin-right: 5px;
             }
 
+            .money__card {
+                color: $alternative-color;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                grid-column: 1;
+                align-self: center;
+            }
+
+            .money__card::before {
+                content: '\e905';
+                font-size: 15px;
+                margin-right: 5px;
+                vertical-align: bottom;
+            }
+
             .time__card {
                 color: $alternative-color;
                 font-weight: 400;
@@ -92,18 +113,22 @@
                 margin-right: 5px;
             }
 
-            .button__card--most__viewed,
-            .button__card--featured {
+            .button__card {
                 height: 40px;
-                width: 40px;
+                width: 100%;
+                grid-column: span 2;
+                justify-content: center;
                 background: #0480DC;
                 border-radius: 8px;
                 padding: 8px;
                 gap: 8px;
                 display: flex;
                 align-items: center;
-                grid-column: 2;
                 cursor: pointer;
+            }
+
+            .button__card--most__viewed {
+                width: 40px;
                 justify-self: flex-end;
             }
 
@@ -112,15 +137,18 @@
                 font-size: 24px;
             }
 
-            .button__card--featured {
-                width: 100%;
-                grid-column: span 2;
-                justify-content: center;
-            }
-
             .button__card--featured i::before {
                 content: '\e90b';
                 font-size: 24px;
+            }
+
+            .button__card--main--banner i::before {
+                content: '\e901';
+                font-size: 24px;
+            }
+
+            .button__card--latest__shirts i::before {
+                content: '\e901';
             }
         }
     }

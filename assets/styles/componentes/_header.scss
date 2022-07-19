@@ -1,5 +1,9 @@
 @import '../abstract/_main.scss';
 
+.header__desktop {
+    display: none;
+}
+
 .header__main {
     background-color: $secondary-background-color;
     display: grid;
@@ -7,6 +11,7 @@
     align-items: center;
     height: 56px;
     padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 
     .header__menu {
         height: 24px;
