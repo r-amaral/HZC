@@ -1,4 +1,4 @@
-@import '../abstract/_main.scss';
+@import '../abstract/_variaveis.scss';
 
 .card__recent__videos {
     display: none;
@@ -6,61 +6,69 @@
 
 @media screen and (min-width:1440px) {
 
-    .card__recent__videos {
-        display: initial;
+    .card__recent__videos--featured {
+        height: 464px;
+    }
+
+    .card__recent__videos--most-viewed {
+        height: 496px;
     }
 
     .card__recent__videos {
+        display: initial;
         width: 256px;
-        height: 464px;
         background: #2C343A;
         border-radius: 16px;
         padding: 16px;
+        box-sizing: border-box;
+
+        h2 {
+            font-weight: 700;
+            font-size: 18px;
+            display: inline-block;
+            height: 24px;
+            margin-right: 13px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 14px;
+            color: $link-color;
+            display: inline-block;
+        }
+
+        ul {
+            .recent__videos__item {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-template-rows: 2;
+                align-items: center;
+                column-gap: 16px;
+                margin-bottom: 16px;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $alternative-color;
+                }
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    grid-column: 1;
+                    grid-row: span 2;
+                }
+            }
+        }
     }
 
-    .card__recent__videos h2 {
-        font-weight: 700;
-        font-size: 18px;
-        display: inline-block;
-        height: 24px;
-        margin-right: 40px;
-        margin-bottom: 16px;
 
-    }
-
-    .card__recent__videos a {
-        font-weight: 600;
-        font-size: 14px;
-        color: $link-color;
-        display: inline-block;
-    }
-
-    .recent__videos__item {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: 2;
-        align-items: center;
-        column-gap: 16px;
-        margin-bottom: 16px;
-    }
-
-    .recent__videos__item h3 {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .recent__videos__item p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        color: $alternative-color;
-    }
-
-    .recent__videos__item img {
-        width: 32px;
-        height: 32px;
-        grid-column: 1;
-        grid-row: span 2;
-    }
 }

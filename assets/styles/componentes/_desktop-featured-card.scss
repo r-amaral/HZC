@@ -15,6 +15,33 @@
         .card--featured {
             grid-column: span 2;
             grid-row: 2;
+
+            .img__featured--mobile {
+                display: none;
+            }
+
+            .img__featured--desktop {
+                display: initial;
+                height: 336px;
+                width: 100%;
+            }
+
+            .card__content {
+
+                .description__card {
+                    font-size: 18px;
+                }
+
+                .main__title__card--featured {
+                    font-size: 26px;
+                }
+
+                .button__card--featured {
+                    width: 153px;
+                    font-size: 14px;
+                }
+            }
+
         }
 
         .card__recent__videos {

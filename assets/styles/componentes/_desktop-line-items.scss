@@ -1,10 +1,9 @@
-@import '../abstract/_main.scss';
-
 @media screen and (min-width:1440px) {
     .topic--line {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 32px;
+        row-gap: 24px;
 
         h2 {
             grid-row: 1;

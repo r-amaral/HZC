@@ -1,15 +1,9 @@
+@import '../abstract/_variaveis.scss';
+
 @font-face {
     font-family: 'icones';
     src: url(../font/icones.ttf);
 }
-
-$main-background-color: #1D232A;
-$secondary-background-color: #15191C;
-$card-color: #2C343A;
-$main-font: #FFFFFF;
-$alternative-color: #95999C;
-$link-color: #0480DC;
-$button-color: #0480DC;
 
 body {
     background-color: #1D232A;
@@ -41,6 +35,6 @@ body {
 
     main {
         grid-column: 2;
-        grid-row: span 2;
+        grid-row: 2;
     }
 }
