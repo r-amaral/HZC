@@ -89,6 +89,7 @@
                 line-height: 24px;
                 grid-column: 1;
                 align-self: center;
+                grid-row: 3;
             }
 
             .money__card::before {
@@ -105,6 +106,12 @@
                 line-height: 24px;
                 grid-column: 1;
                 align-self: center;
+                grid-row: 3;
+            }
+
+            .money__card--main-banner,
+            .time__card--featured {
+                grid-row: 4;
             }
 
             .time__card::before {
@@ -130,6 +137,7 @@
             .button__card--most__viewed {
                 width: 40px;
                 justify-self: flex-end;
+                grid-row: 3;
             }
 
             .button__card--most__viewed i::before {

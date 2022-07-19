@@ -1,0 +1,24 @@
+@media screen and (min-width:1440px) {
+
+    .featured {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 2;
+        column-gap: 32px;
+        grid-column: span 4;
+
+        .featured h2 {
+            grid-column: span 3;
+            grid-row: 1;
+        }
+
+        .card--featured {
+            grid-column: span 2;
+            grid-row: 2;
+        }
+
+        .card__recent__videos {
+            grid-row: 2;
+        }
+    }
+}

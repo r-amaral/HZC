@@ -1,0 +1,18 @@
+@import '../abstract/_main.scss';
+
+@media screen and (min-width:1440px) {
+    .topic--line {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 32px;
+
+        h2 {
+            grid-row: 1;
+            grid-column: span 2;
+        }
+
+        .card--line {
+            grid-row: 2;
+        }
+    }
+}
