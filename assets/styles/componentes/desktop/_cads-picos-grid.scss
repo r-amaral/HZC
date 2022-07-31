@@ -1,0 +1,28 @@
+@import '../../abstract/_variaveis.scss';
+
+@media screen and(min-width:1440px) {
+
+    .topic--picos {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 2;
+
+        .tittle__main {
+            grid-column: span 3;
+        }
+
+        .card--picos {
+            grid-column: span 2;
+        }
+    }
+
+    .topic--picos-cards-secondary {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+
+        .tittle--position {
+            grid-row: 1;
+            grid-column: span 4;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@import '../abstract/_variaveis.scss';
+@import '../../abstract/_variaveis.scss';
 
 .card__recent__videos {
     display: none;
@@ -15,7 +15,9 @@
     }
 
     .card__recent__videos {
-        display: initial;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
         width: 256px;
         background: #2C343A;
         border-radius: 16px;
@@ -27,18 +29,23 @@
             font-size: 18px;
             display: inline-block;
             height: 24px;
-            margin-right: 13px;
             margin-bottom: 16px;
+            grid-row: 1;
         }
 
         a {
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
             color: $link-color;
             display: inline-block;
+            justify-self: flex-end;
+            margin-bottom: 16px;
+            grid-row: 1;
         }
 
         ul {
+            grid-column: span 3;
+
             .recent__videos__item {
                 display: grid;
                 grid-template-columns: auto 1fr;
@@ -46,6 +53,7 @@
                 align-items: center;
                 column-gap: 16px;
                 margin-bottom: 16px;
+
 
                 h3 {
                     font-weight: 700;

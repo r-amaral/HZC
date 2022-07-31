@@ -3,9 +3,10 @@
 @import './componentes/_header.scss';
 @import './componentes/_lateral-menu.scss';
 @import './componentes/_cards.scss';
-@import './componentes/_desktop-header.scss';
-@import './componentes/_desktop-lateral-menu.scss';
-@import './componentes/_desktop-recent-videos.scss';
-@import './componentes/_desktop-card.scss';
-@import './componentes/_desktop-line-items.scss';
 @import './componentes/_cards-picos-details.scss';
+@import './componentes/desktop/_header.scss';
+@import './componentes/desktop/_lateral-menu.scss';
+@import './componentes/desktop/_recent-videos.scss';
+@import './componentes/desktop/_cards.scss';
+@import './componentes/desktop/_line-items.scss';
+@import './componentes/desktop/_cads-picos-grid.scss';
