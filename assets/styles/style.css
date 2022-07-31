@@ -14,6 +14,10 @@ body {
   padding-right: 4.4%;
 }
 
+.on {
+  display: grid;
+}
+
 @media screen and (min-width: 1440px) {
   body {
     display: grid;
@@ -102,16 +106,17 @@ body {
   padding-left: 64px;
   display: grid;
   align-items: center;
-}
-.lateral__menu .lateral__menu__list .menu__list--active {
-  color: #ffffff;
-  padding-left: 56px;
-  border-left: 8px solid white;
+  cursor: pointer;
 }
 .lateral__menu .lateral__menu__list .menu__list--item i::before {
   position: absolute;
   left: 26px;
   font-size: 24px;
+}
+.lateral__menu .lateral__menu__list .menu__list--active {
+  color: #ffffff;
+  padding-left: 56px;
+  border-left: 8px solid white;
 }
 .lateral__menu .lateral__menu__list .menu__list--item:nth-child(1) i::before {
   content: "\e902";
@@ -143,10 +148,14 @@ body {
   display: grid;
   gap: 20px;
 }
-.topic h2 {
+.topic .tittle__main {
   font-weight: 700;
   font-size: 26px;
   line-height: 32px;
+}
+.topic .tittle__secondary {
+  font-size: 18px;
+  font-weight: 700;
 }
 .topic .card {
   border-radius: 16px;
@@ -165,6 +174,10 @@ body {
 }
 .topic .card .img__featured--desktop {
   display: none;
+}
+.topic .card .img__picos {
+  width: 100%;
+  height: 468px;
 }
 .topic .card .card__content {
   background: #2C343A;
@@ -191,6 +204,9 @@ body {
 }
 .topic .card .card__content .main__title__card--featured {
   height: 24px;
+}
+.topic .card .card__content .main__title__card--picos {
+  height: auto;
 }
 .topic .card .card__content .autor__card {
   font-weight: 400;
@@ -257,25 +273,44 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.topic .card .card__content .button__card--most__viewed {
+.topic .card .card__content .button__card--smal__side {
   width: 40px;
   justify-self: flex-end;
   grid-row: 3;
 }
-.topic .card .card__content .button__card--most__viewed i::before {
+.topic .card .card__content .button__card--smal__side::before {
   content: "\e90b";
   font-size: 24px;
 }
-.topic .card .card__content .button__card--featured i::before {
+.topic .card .card__content .button__card--featured::before {
   content: "\e90b";
   font-size: 24px;
 }
-.topic .card .card__content .button__card--main--banner i::before {
+.topic .card .card__content .button__card--main--banner::before {
   content: "\e901";
   font-size: 24px;
 }
-.topic .card .card__content .button__card--latest__shirts i::before {
+.topic .card .card__content .button__card--latest__shirts::before {
   content: "\e901";
+}
+.topic .card .card__content--picos {
+  grid-template-rows: 3;
+  align-items: center;
+}
+.topic .card .card__content--picos .views__card--picos {
+  grid-column: 1;
+  grid-row: 3;
+}
+.topic .card .card__content--picos .button__card--picos {
+  background: url(/assets/img/Vector.png) no-repeat center;
+  background-color: #0480DC;
+}
+.topic .card .card__content--picos .button__card--picos::before {
+  content: "";
+}
+
+.off {
+  display: none !important;
 }
 
 @media screen and (min-width: 1440px) {
@@ -378,6 +413,9 @@ body {
   }
 }
 @media screen and (min-width: 1440px) {
+  .topic .tittle__secondary {
+    font-size: 26px;
+  }
   .featured {
     display: grid;
     grid-template-columns: auto 1fr auto;

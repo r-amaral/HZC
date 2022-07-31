@@ -32,18 +32,18 @@
     <nav class="lateral__menu">
         <img class='lateral__menu--logo' src="./assets/img/logo.svg" alt="Logo da Hzc">
         <ul class="lateral__menu__list">
-            <li class="menu__list--item menu__list--active "><a href="#"><i></i>Inicio</a></li>
-            <li class="menu__list--item"><a href="#"><i></i>Videos</a></li>
-            <li class="menu__list--item"><a href="#"><i></i>Picos</a></li>
-            <li class="menu__list--item"><a href="#"><i></i>Integrantes</a></li>
-            <li class="menu__list--item"><a href="#"><i></i>Camisas</a></li>
-            <li class="menu__list--item"><a href="#"><i></i>Pinturas</a></li>
+            <li class="menu__list--item menu__list--active "><i>Inicio</i></li>
+            <li class="menu__list--item"><i>Videos</i></li>
+            <li class="menu__list--item"><i>Picos</i></li>
+            <li class="menu__list--item"><i>Integrantes</i></li>
+            <li class="menu__list--item"><i>Camisas</i></li>
+            <li class="menu__list--item"><i>Pinturas</i></li>
         </ul>
     </nav>
 
     <main class='container'>
-        <section class='topic featured'>
-            <h2>Início</h2>
+        <section class='topic featured video'>
+            <h2 class='tittle__main'>Início</h2>
             <article class='card card--featured'>
                 <img class='img__featured--mobile' src="./assets/img/banner-mobile_1.png"
                     alt="Banner Video em destaque">
@@ -89,15 +89,15 @@
                 </ul>
             </article>
         </section>
-        <section class='topic topic--line'>
-            <h2>Vídeos mais vistos</h2>
+        <section class='topic topic--line video'>
+            <h2 class='tittle__secondary'>Vídeos mais vistos</h2>
             <article class='card card--line'>
                 <img class='img__single-card' src="./assets/img/video_1.png" alt="Primeiro banner video mais visto">
                 <div class='card__content container'>
                     <p class='autor__card'>André Soares</p>
                     <h4 class="main__title__card">HZC - Tudo sem Padrin</h4>
                     <span class='time__card'>33 minutos</span>
-                    <button class='button__card button__card--most__viewed'><i></i></button>
+                    <button class='button__card button__card--smal__side'></button>
                 </div>
             </article>
             <article class='card card--line'>
@@ -106,7 +106,7 @@
                     <p class='autor__card'>Bruno Lopes</p>
                     <h4 class="main__title__card">HZC - Enter The Hu-flez</h4>
                     <span class='time__card'>33 minutos</span>
-                    <button class='button__card button__card--most__viewed'><i></i></button>
+                    <button class='button__card button__card--smal__side'></button>
                 </div>
             </article>
             <article class='card card--line'>
@@ -115,7 +115,7 @@
                     <p class='autor__card'>Luiza Sampaio</p>
                     <h4 class="main__title__card">HZC - Vol.3</h4>
                     <span class='time__card'>33 minutos</span>
-                    <button class='button__card button__card--most__viewed'><i></i></button>
+                    <button class='button__card button__card--smal__side'></button>
                 </div>
             </article>
             <article class='card card--line'>
@@ -124,10 +124,10 @@
                     <p class='autor__card'>Bruno Lopes</p>
                     <h4 class="main__title__card">HZC - Love Machine</h4>
                     <span class='time__card'>33 minutos</span>
-                    <button class='button__card button__card--most__viewed'><i></i></button>
+                    <button class='button__card button__card--smal__side'></button>
                 </div>
             </article>
-            <div class='featured'>
+            <div class='featured featured__video'>
                 <article class='card__recent__videos card__recent__videos--most-viewed'>
                     <h2>Vídeos recentes</h2>
                     <a href="#">Ver todos</a>
@@ -187,7 +187,7 @@
             </div>
         </section>
         <section class='topic topic--line'>
-            <h2>Camisas mais recentes</h2>
+            <h2 class='tittle__secondary'>Camisas mais recentes</h2>
             <article class='card card--line'>
                 <img class='img__single-card' src="./assets/img/produto_1.png"
                     alt="Primeiro banner produto mais vendido">
@@ -195,8 +195,7 @@
                     <p class='autor__card'>André Soares</p>
                     <h4 class="main__title__card">HZC - Tudo sem Padrin</h4>
                     <span class='money__card'>33,33</span>
-                    <button
-                        class='button__card button__card--most__viewed button__card--latest__shirts'><i></i></button>
+                    <button class='button__card button__card--smal__side button__card--latest__shirts'></button>
                 </div>
             </article>
             <article class='card card--line'>
@@ -206,8 +205,7 @@
                     <p class='autor__card'>Bruno Lopes</p>
                     <h4 class="main__title__card">Huflez Crew Philosophy Club</h4>
                     <span class='money__card'>33,33</span>
-                    <button
-                        class='button__card button__card--most__viewed button__card--latest__shirts'><i></i></button>
+                    <button class='button__card button__card--smal__side button__card--latest__shirts'></button>
                 </div>
             </article>
             <article class='card card--line'>
@@ -217,8 +215,7 @@
                     <p class='autor__card'>Luiza Sampaio</p>
                     <h4 class="main__title__card">Corujita noturna</h4>
                     <span class='money__card'>33,33</span>
-                    <button
-                        class='button__card button__card--most__viewed button__card--latest__shirts'><i></i></button>
+                    <button class='button__card button__card--smal__side button__card--latest__shirts'></button>
                 </div>
             </article>
             <article class='card card--line'>
@@ -227,14 +224,61 @@
                     <p class='autor__card'>Bruno Lopes</p>
                     <h4 class="main__title__card">GGG - Gatin G Gorro</h4>
                     <span class='money__card'>33,33</span>
-                    <button
-                        class='button__card button__card--most__viewed button__card--latest__shirts'><i></i></button>
+                    <button class='button__card button__card--smal__side button__card--latest__shirts'></button>
+                </div>
+            </article>
+        </section>
+
+        <section class='topic topic--picos off'>
+            <h2 class='tittle__main'>Picos</h2>
+            <article class="card">
+                <img class="img__picos" src="./assets/img/Arte.png" alt="Mapa da cidade">
+            </article>
+        </section>
+
+        <section class="topic topic--picos off">
+            <h2 class='tittle__secondary'>Vídeos mais vistos</h2>
+            <article class='card'>
+                <img class='img__single-card' src="./assets/img/picos_1.png" alt="Um muro do Itaú">
+                <div class="card__content card__content--picos container">
+                    <p class='autor__card'>Bruno Lopes</p>
+                    <h3 class='main__title__card main__title__card--picos'>Gap do Itaú da Voluntários da Pátria</h3>
+                    <span class='views__card views__card--picos'>53 visualizações</span>
+                    <button class='button__card button__card--smal__side button__card--picos'></button>
+                </div>
+            </article>
+            <article class='card'>
+                <img class='img__single-card' src="./assets/img/picos_2.png" alt="Uma escada">
+                <div class="card__content card__content--picos container">
+                    <p class='autor__card'>Luiza Sampaio</p>
+                    <h3 class='main__title__card main__title__card--picos'>Gap com mureta de Voluntários</h3>
+                    <span class='views__card views__card--picos'>53 visualizações</span>
+                    <button class='button__card button__card--smal__side button__card--picos'></button>
+                </div>
+            </article>
+            <article class='card'>
+                <img class='img__single-card' src="./assets/img/picos_3.png" alt="Rampa de entrade de um tunel">
+                <div class="card__content card__content--picos container">
+                    <p class='autor__card'>André Soares</p>
+                    <h3 class='main__title__card main__title__card--picos'>Rampa da entrada do túnel do rebouças</h3>
+                    <span class='views__card views__card--picos'>53 visualizações</span>
+                    <button class='button__card button__card--smal__side button__card--picos'></button>
+                </div>
+            </article>
+            <article class='card'>
+                <img class='img__single-card' src="./assets/img/picos_4.png" alt="Muro de uma pista de skate">
+                <div class="card__content card__content--picos container">
+                    <p class='autor__card'>Júlia Fonseca</p>
+                    <h3 class='main__title__card main__title__card--picos'>Wallride de pedra portuguesa da FGP</h3>
+                    <span class='views__card views__card--picos'>53 visualizações</span>
+                    <button class='button__card button__card--smal__side button__card--picos'></button>
                 </div>
             </article>
         </section>
     </main>
 
     <script src="./assets/scripts/lateral_menu.js"></script>
+    <script src="./assets/scripts/navigation.js"></script>
 </body>
 
 </html>
