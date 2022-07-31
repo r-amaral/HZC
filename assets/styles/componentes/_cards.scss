@@ -90,12 +90,12 @@
                 font-size: 14px;
                 grid-column: 2;
                 line-height: 24px;
-            }
 
-            .views__card::before {
-                content: '\e90f';
-                font-size: 13px;
-                margin-right: 5px;
+                &::before {
+                    content: '\e90f';
+                    font-size: 13px;
+                    margin-right: 5px;
+                }
             }
 
             .money__card {
