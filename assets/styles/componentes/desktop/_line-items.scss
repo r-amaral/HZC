@@ -1,6 +1,6 @@
 @import '../../abstract/_variaveis.scss';
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
     .topic--line {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

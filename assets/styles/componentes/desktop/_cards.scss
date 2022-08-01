@@ -1,12 +1,19 @@
 @import '../../abstract/_variaveis.scss';
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
     .topic {
 
         .tittle__secondary {
             font-size: 26px;
         }
+
+        .card {
+            .card__content {
+                column-gap: 0px;
+            }
+        }
     }
+
 
     .featured {
         display: grid;
@@ -45,7 +52,7 @@
                 }
 
                 .button__card--featured {
-                    width: 153px;
+                    width: 156px;
                     font-size: 14px;
                 }
             }

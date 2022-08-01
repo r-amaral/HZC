@@ -1,6 +1,6 @@
 @import '../../abstract/_variaveis.scss';
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
 
     .header__mobile {
         display: none;
@@ -37,5 +37,4 @@
     .header__desktop p {
         color: $alternative-color;
     }
-
 }

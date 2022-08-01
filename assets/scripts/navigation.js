@@ -29,6 +29,8 @@ function screenSelected() {
         picos.forEach(item => {
             item.classList.add('off');
         })
+
+        lateralMenu.classList.toggle('active__menu');
     }
 
     if (listItem[1].classList.contains('menu__list--active')) {
@@ -45,6 +47,8 @@ function screenSelected() {
         picos.forEach(item => {
             item.classList.add('off');
         })
+
+        lateralMenu.classList.toggle('active__menu');
     }
 
     if (listItem[2].classList.contains('menu__list--active')) {
@@ -58,6 +62,8 @@ function screenSelected() {
         picos.forEach(item => {
             item.classList.remove('off');
         })
+
+        lateralMenu.classList.toggle('active__menu');
     }
 }
 

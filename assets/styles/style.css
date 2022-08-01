@@ -13,24 +13,6 @@ body .container {
   padding-right: 4.4%;
 }
 
-@media screen and (min-width: 1440px) {
-  body {
-    display: grid;
-    grid-template-columns: auto 1fr;
-  }
-  body header {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  body nav {
-    grid-column: 1;
-    grid-row: span 2;
-  }
-  body main {
-    grid-column: 2;
-    grid-row: 2;
-  }
-}
 .header__desktop {
   display: none;
 }
@@ -368,7 +350,7 @@ body .container {
   margin-right: 5px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .header__mobile {
     display: none;
   }
@@ -400,7 +382,7 @@ body .container {
     color: #95999C;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .lateral__menu {
     left: 0;
     position: static;
@@ -411,7 +393,7 @@ body .container {
   display: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .card__recent__videos--featured {
     height: 464px;
   }
@@ -475,9 +457,13 @@ body .container {
     grid-row: span 2;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .topic .tittle__secondary {
     font-size: 26px;
+  }
+  .topic .card .card__content {
+    -moz-column-gap: 0px;
+         column-gap: 0px;
   }
   .featured {
     display: grid;
@@ -510,14 +496,14 @@ body .container {
     font-size: 26px;
   }
   .featured .card--featured .card__content .button__card--featured {
-    width: 153px;
+    width: 156px;
     font-size: 14px;
   }
   .featured .card__recent__videos {
     grid-row: 2;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .topic--line {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -533,7 +519,7 @@ body .container {
     grid-row: 2;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .topic--picos {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -552,5 +538,23 @@ body .container {
   .topic--picos-cards-secondary .tittle--position {
     grid-row: 1;
     grid-column: span 4;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  body header {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  body nav {
+    grid-column: 1;
+    grid-row: span 2;
+  }
+  body main {
+    grid-column: 2;
+    grid-row: 2;
   }
 }/*# sourceMappingURL=style.css.map */
